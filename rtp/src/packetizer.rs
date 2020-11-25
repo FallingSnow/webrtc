@@ -35,7 +35,7 @@ pub trait Depacketizer {
 
 pub type FnTimeGen = fn() -> Duration;
 
-struct PacketizerImpl {
+pub struct PacketizerImpl {
     mtu: isize,
     payload_type: u8,
     ssrc: u32,
